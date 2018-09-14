@@ -25,7 +25,7 @@ public class CP_1_SincronizacionProductos {
     @Test
     public void CP_1_SincronizacionProductosTest(){
         try{
-
+            wait.until(ExpectedConditions.elementToBeClickable(By.name("Minimizar"))).click();
             wait.until(ExpectedConditions.elementToBeClickable(By.id("btnFlat"))).click();
             wait.until(ExpectedConditions.elementToBeClickable(By.name("Correo Electrónico"))).sendKeys("walook.pruebas@gmail.com");
             wait.until(ExpectedConditions.elementToBeClickable(By.name("Contraseña"))).sendKeys("PruebasWa100k");
